@@ -1,0 +1,37 @@
+{
+  "name": "redeco-api",
+  "version": "1.0.0",
+  "description": "API para gestión de documentos",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "deploy": "node src/server.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "Adair Peña",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.1.0",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "node-cache": "^5.1.2",
+    "nodemon": "^3.1.0",
+    "oracledb": "^6.2.0",
+    "pg": "^8.14.1",
+    "pg-pool": "^3.6.1",
+    "redis": "^4.7.0",
+    "supertest": "^6.3.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0"
+  }
+}
