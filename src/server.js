@@ -14,8 +14,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 
-    setInterval(() => {
-        console.log('Ejecutando proceso de descarga automática...');
-        procesarDescargaAutomatica();
-    }, 60000);
+    console.log('Ejecutando proceso de descarga automática...');
+    procesarDescargaAutomatica();
 });
