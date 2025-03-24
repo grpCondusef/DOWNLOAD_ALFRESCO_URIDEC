@@ -8,7 +8,8 @@ import { getOrderedDocuments } from '../database/documentRepository.js';
 dotenv.config();
 
 const ALFRESCO_BASE_URL = 'https://acs.condusef.gob.mx/alfresco/s/mx/com/iikt/download/workspace/SpacesStore';
-const DOWNLOADS_PATH = '\\archexpedientes\\download_alfresco';
+const DOWNLOADS_PATH = '/archexpedientes/download_alfresco';
+//const DOWNLOADS_PATH = 'C:\\Users\\apescador\\Downloads';
 
 const axiosInstance = axios.create({
     httpsAgent: new https.Agent({
